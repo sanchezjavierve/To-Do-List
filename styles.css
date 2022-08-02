@@ -1,0 +1,56 @@
+/* Style the input bar */
+#form3 {
+  margin-bottom: 0.7rem;}
+
+/*Align the add button*/
+#addbtn {
+  margin: auto auto 3.2rem 1rem;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  background: #e2d5de;
+  transition: 0.2s;
+
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #FFF2F2;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: A8A4CE;
+  color: #A8A4CE;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #A8A4CE;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 12px;
+  left: 0px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 8px 16px 8px 16px;
+}
+
+.close:hover {
+  background-color: #e2d5de;
+  color: white;
+}
